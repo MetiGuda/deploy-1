@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./Home.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+
+<body onload="document.form1.text1.focus()">
+
+  <header class="header">
+    <nav><a href="./Home.html"><img class="logo" src="../images/Logo.svg"></a>
+      <section class="nlinks">
+        <ul>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="../Birds/birds.html">Birds</a></li>
+          <li><a href="../Mammals/mammals.html">Mammals</a></li>
+          <li><a href="../Reptiles/reptiles.html">Reptiles</a></li>
+          <li><a href="../About/About.html">About</a></li>
+          <li><a href="../Contact/Contact.html">Contact</a></li>
+
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <section class="images">
+    <section class="first">
+      <figure>
+        <img src="../images/lions.png" alt="lions" height="100%" width="100%">
+      </figure>
+    </section>
+  </section>
+
+
+  <article class="text">
+    <h3> Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions,
+      animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an
+      ontogenetic stage in which their body consists of a hollow sphere of cells, the blastula, during embryonic
+      development.</h3>
+  </article>
+
+  <section class="main">
+    <h2>Animals</h2>
+    <section class="begin">
+      <figure>
+        <a href="../Birds/birds.html"><img src="../images/bird.jpg" width="500px" height="400px"></a>
+        <figcaption>Parrot</figcaption>
+      </figure>
+
+      <p>Birds are a group of warm-blooded vertebrates constituting the class Aves, characterised by
+        feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart,
+        and a strong yet lightweight skeleton.</p>
+    </section>
+    <section class="begin">
+      <figure>
+        <a href="../Reptiles/reptiles.html"><img src="../images/snake.jpg" width="500px" height="400px"></a>
+        <figcaption>Snake</figcaption>
+      </figure>
+
+      <p>Reptiles, as most commonly defined are the animals in the class Reptilia, a
+        paraphyletic grouping comprising all sauropsids except birds. Living reptiles comprise turtles, crocodilians,
+        squamates (lizards and snakes) and rhynchocephalians (tuatara).</p>
+    </section>
+    <section class="begin">
+      <figure>
+        <a href="../Mammals/mammals.html"><img src="../images/zebra.jpg" width="500px" height="400px"></a>
+        <figcaption>Zebra</figcaption>
+      </figure>
+
+      <p>Animals belonging to class Mammalia are referred to as mammals. Mammals are one of the most evolved species in
+        the animal kingdom categorized under vertebrata.
+
+        They exhibit advanced characteristics which set them apart from all other animals. They are characterized by the
+        presence of mammary glands through which they feed their younger ones.
+
+        They are distributed worldwide and have adapted well to their surroundings – from oceans, deserts and polar
+        regions to rainforests and rivers etc.</p>
+    </section>
+
+  </section>
+
+
+  <footer class="foot">
+    <section class="hold">
+      <section class="col">
+        <a href="./Home.html"><img src="../images/Logo.svg" alt="logo"></a>
+        <p>Conserve Nature's Bounty.</p>
+        <p>&copy; Copyright Reserved.</p>
+      </section>
+      <section class="col">
+        <h3>Site Links</h3>
+        <ul>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="../Birds/birds.html">Birds</a></li>
+          <li><a href="../Reptiles/reptiles.html">Reptiles</a></li>
+          <li><a href="../Mammals/mammals.html">Mammals</a></li>
+          <li><a href="../About/About.html">About</a></li>
+          <li><a href="../Contact/Contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section class="col" id="validate">
+        <h4>Newsletter Signup</h4>
+        <form class="form" method="get" name="validate">
+          <ion-icon name="mail" id="mail-icon"></ion-icon>
+          <div class="input">
+            <input type="text" placeholder="Email" name="email" class="email">
+            <button type="submit" onclick="ValidateEmail(document.form1.text1)"><ion-icon
+                name="arrow-round-forward"></ion-icon></button>
+          </div>
+          <div class="valid">Thank you for signing up!</div>
+        </form>
+
+      </section>
+    </section>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="./signup.js"></script>
+
+</body>
+
+</html>
