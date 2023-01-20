@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Black.ttf);
+  }
+  @font-face {
+    font-family: Baserkville;
+    src: url(../fonts/LibreBaskerville-Regular.ttf);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: radial-gradient(circle, rgba(50,128,77,1) 6%, rgba(42,98,66,1) 30%, rgba(0, 0, 0, 0.856) 98%);
+  }
+
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rosybrown;
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav img {
+    width: 150px;
+  }
+
+  .nlinks {
+    flex: 1;
+    text-align: right;
+  }
+
+  .nlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+
+  .nlinks ul li a {
+    color: #686c58;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+  .nlinks ul li a:hover::after {
+    width:100%;
+  }
+  .nlinks li a:hover {
+    color: #174029;
+    color: #fff;
+    box-sizing: content-box;
+    outline: none;
+    border: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+
+  .nlinks li a:visited {
+    font-style: italic;
+    color: #850404;
+
+  }
+  .nlinks li a:active {
+    color: #253a49;
+  }
+
+  .head {
+    font-family: Montserrat, serif;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #0fa, 2px 2px 1px #0fa;
+    text-align: left;
+    margin: 10px;
+    text-align: center;
+
+  }
+
+.info {
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  font-family: Baserkville, sans-serif;
+  padding: 50px;
+  color: #9c785b;
+}
+h2 {
+  margin: 10px 50px 0;
+}
+.cxcs {
+  padding: 50px;
+  margin: 25px;
+  text-align: justify;
+  color: #A68F7B;
+}
+.container {
+  column-count: 3;
+  display: flex;
+  flex-direction: row;
+  column-gap: 45px;
+  align-items: center;
+  padding: 100px;
+}
+figcaption {
+  font-size: 12px;
+  font-style: italic;
+  margin-left: 100px;
+}
+  .foot {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: transparent;
+    padding: 30px 0 30px;
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 20px;
+ }
+ .hold {
+   width: 80%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+ }
+ footer img {
+   width: 250px;
+ }
+ .col {
+   flex-basis: 25%;
+   padding: 20px;
+ }
+ .foot ul li {
+     list-style: none;
+     margin: 12px;
+ }
+
+ .foot ul li a {
+     text-decoration: none;
+     color: #764330;
+ }
+ .foot ul li a:hover {
+   text-decoration: underline;
+   color: #fff;
+   text-transform: uppercase;
+ }
+ .foot ul li a:visited {
+   text-decoration: none;
+   color: blue;
+ }
+ form {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px;
+   margin-bottom: 50px;
+   border-bottom: 1px solid #ccc;
+ }
+ form ion-icon {
+   font-size: 18px;
+   margin-right: 10px;
+ }
+ form input {
+   width: 100%;
+   background-color: transparent;
+   border: 0;
+   outline: none;
+   color: #fff;
+ }
+ form button {
+   background-color: transparent;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+   font-size: 16px;
+ }
+
+
+ @media screen and (max-width:768px) {
+
+  .hold {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .container {
+    column-count: 3;
+    column-gap: 45px;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  }
